@@ -1,0 +1,82 @@
+@charset "UTF-8";
+
+#Carousel{
+	display:flex;
+	width:100%;
+	height:100%;
+	background-image:url('../img/banner/bleuets.png');
+	background-repeat:no-repeat;
+	background-size: cover;
+ 	background-position: bottom; 
+ 	position:absolute;
+ 	top:0px;
+ 	left:0px;
+}
+
+.innerLayout{
+	width:100%;
+	height:100%;
+	display:grid;
+	grid-template-columns: 10% 80% 10%;
+	grid-template-rows: repeat(2, [row] 100%);
+}
+
+.innerLayout > *{
+	z-index:4;
+}
+
+.m1, .m3 {
+	display:grid;
+	grid-template-columns: 100%;
+	grid-template-rows: 85% 15%;
+}
+
+.m1{
+	border-radius: 10px 0px 0px 10px;
+}
+
+.m3{
+	border-radius: 0px 10px 10px 0px;
+}
+
+.m1 > *, .m3 > *{
+	color:white;
+	font-size:25px;
+	text-align:center;
+	z-index:5;
+}
+
+.arrow{
+	text-shadow:3px 3px 3px rgb(0,0,0, 0.4); 
+}
+
+.arrow:hover{
+	cursor:pointer;
+	transform: scale(1.2);
+}
+
+.m2{
+	display:grid;
+	grid-template-columns: 100%;
+	grid-template-rows: 85% 15%;
+}
+
+#dotsHolder{
+	display:flex;
+	justify-content:space-evenly;
+	padding-top:8px;
+}
+
+#dotsHolder > * {
+	width:10px;
+	height:10px;
+	border-radius:50%;
+	border:1.2px solid white;
+	box-shadow:3px 3px 3px rgb(0,0,0, 0.4); 
+}
+
+#dotsHolder > *:hover{
+	cursor:pointer;
+	transform: scale(1.2);
+	
+}

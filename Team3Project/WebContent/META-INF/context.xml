@@ -1,0 +1,8 @@
+<Context>
+	<Resource name="jdbc/ayjml"
+	auth="Container" type="javax.sql.DataSource"
+	maxAxtive="20" maxIdle="20" maxWaitMillis="1000"
+	username="u915933203_ayjml" password="Admin2021**"
+	driverClassName="com.mysql.cj.jdbc.Driver"
+	url="jdbc:mysql://151.106.97.51/u915933203_ayjml?useSSL=false&amp;serverTimeZone=UTC"/>
+</Context>
